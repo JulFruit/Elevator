@@ -24,3 +24,18 @@ Building *create_building(int nbFloor, Elevator *elevator, PersonList **waitingL
 }
 
 PersonList *exitElevator(Elevator *e);
+
+PersonList *enterElevator(Elevator *e, PersonList *list)
+{
+    int n = 0;
+    PersonList *Compte = e->persons;
+    while (Compte->next != NULL)
+    {
+        n++;
+        PersonList *Compte = Compte->next;
+    }
+
+    for (int i = n, i < e->capacity, i++)
+    {
+    }
+}

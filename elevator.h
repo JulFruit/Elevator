@@ -1,6 +1,6 @@
 #ifndef ELEVATOR_H
 #define ELEVATOR_H
-#include &quot; person.h & quot;
+#include "person.h"
 typedef struct _Elevator
 {
     int capacity; // capacité maximale de la cabine
