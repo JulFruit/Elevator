@@ -50,9 +50,10 @@ PersonList *enterElevator(Elevator *e, PersonList *list)
     while (List_Count != NULL)
     {
         Places++;
+        List_Count = List_Count->next;
     }
 
-    for (int i = 0; i < Places; i++)
+    for (int i = 0; i < e->capacity - Places; i++)
     {
         if (list->person != NULL)
         {
