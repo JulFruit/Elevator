@@ -1,4 +1,5 @@
 #include "elevator.h"
+#include "person.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -46,7 +47,7 @@ PersonList *enterElevator(Elevator *e, PersonList *list)
     int Places = 0;
     PersonList *List_Count = malloc(e->capacity * sizeof(PersonList *));
     List_Count = e->persons;
-    while (List_Count->person != NULL)
+    while (List_Count != NULL)
     {
         Places++;
     }
